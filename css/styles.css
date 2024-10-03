@@ -1,0 +1,460 @@
+:root{
+    --base-unit: 1.5rem;
+    --minimum-font:0.8rem;
+    --color1: black;
+    --color2: rgb(255, 111, 0);
+    --color3: white;
+
+}
+
+/*-------------------MOBILE FIRST------------------------*/
+
+@media only screen and (min-width: 400px) {
+    
+        /* Add styles for mobile devices */
+        .sarrera{
+            margin-bottom:20px;
+            display:flex;
+            justify-content:center;
+            padding-top:10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            font-size:20px;
+        }
+
+        .sarrera h1{
+            text-shadow: rgb(255, 111, 0);
+        }
+
+        .headertitulo{
+            width:100%;
+            height:100%;
+            background-color:var(--color1);
+        }
+
+        img{
+            width: 50px;
+        }
+
+        /*-----------------NAVBAR HASIERA MOBILE----------------*/
+
+        .nav_items{
+            position: absolute;
+            padding-top: 60px;
+            padding-left: 20px;
+            left: 0;
+            background: var(--color1);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;   
+            transform: translateX(-100%);
+            font-size: var(--base-unit);
+            transition: 0.3s ease all;
+        }
+
+        .nav_items a{
+            text-decoration: none;
+            color: var(--color3);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        a:hover{
+            color: var(--color2);
+        }
+
+        .nav_toggle{
+          display: flex;
+          flex-direction: column;
+          margin: 15px;
+        }
+
+        .nav_toggle span{
+          width: 30px;
+          height: 4px;
+          background: var(--color3);
+          margin-bottom: 5px;
+          border-radius: 2px;
+          transform-origin: 5px 0px;
+          transition: all 0.2s linear;
+        }
+        .close span{
+          transform: rotate(45deg) translate(0px, 0px);
+        }
+        .close span:nth-child(2){
+          display: none;
+        }
+        .close span:nth-child(3){
+          transform: rotate(-45deg) translate(-5px, 1px);
+        }
+        .open{
+          transform: translateX(0);
+        }
+
+
+        /*----------------NAVBAR MOBILE BUKAERA-----------------*/
+        
+        .paralax{
+            background-image: url(/img/img01.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: calc(100% + 0);
+            height: 700px;
+            overflow: hidden;
+        }
+
+        #imgkonzi{
+            height: 700px;
+            z-index: 2;
+        }
+
+        #losquevienen{
+            z-index: 3;
+        }
+        
+        .testu1{
+        text-align:center;
+        }
+
+        p{
+            margin-top:20px;
+            margin-bottom: 20px;
+            font-size:15px;
+            font-style:black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .caja-fotos{
+            display:flex;
+            flex-direction: column;
+        }
+
+        h1{
+            margin-left:20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        /*------------------calendarioinicio------------------*/
+
+        .calendar {
+            margin-bottom: 30px;
+            margin-left: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        
+        header {
+            background-color: var(--color1);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 10px;
+        }
+        
+        .days-of-week {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .days-of-week div {
+            padding: 10px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        
+        .days div {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        
+        .days div:nth-child(7n) {
+            border-right: none;
+        }
+        
+        .days div:nth-last-child(-n+7) {
+            border-bottom: none;
+        }
+
+        .days2 {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        
+        .days2 div {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        
+        .days2 div:nth-child(7n) {
+            border-right: none;
+        }
+        
+        .days2 div:nth-last-child(-n+7) {
+            border-bottom: none;
+        }
+
+        /*-----------CALENDARIO FINAL-------------*/      
+        
+        
+        /*-------------------------INICIO ENTRADAS----------------*/
+        .padre{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 2%;
+            box-shadow: 2px gray;
+            margin: 7px;
+            padding: 7px;
+            width: 450px;
+           }
+
+        .container img{
+            width: 200px;
+            align-content: center;
+        }
+
+        button{
+            border: 2px solid var(--black);
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /**font-size: 1vw;**/
+            padding: 5px;
+            margin: 7px;
+            background: var(--color2);
+            border-radius:100px;
+            transition-duration: 0.4s;
+            height: fit-content;
+            width: 200px;
+            height: 50px;
+            /**width: 5vw;**/
+            margin-left: 0px;
+        }
+
+        button:hover {
+            background-color: var(--color1); 
+            color: var(--color3);
+          }
+
+        #carritoikono a img{
+           width: 50px;
+        }
+
+        /*-------------------------FINAL ENTRADAS-----------------*/
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+
+        footer{
+            background-color:var(--color2);
+            display: flex;
+            justify-content: space-around;
+            height: 170px;
+        }
+
+        .footerinfo{
+            margin-top: 20px;
+        }
+
+        li{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            list-style-type: inline;
+            list-style: none;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footerimg{
+            margin-bottom: 10px;
+            width: 30px;
+        }
+          
+}
+
+/*------------------SCREEN-----------------------------*/
+@media only screen and (min-width: 1200px) {
+    
+        /* Add styles for desktop devices*/
+        /*-------------------NAVBAR HASIERA DESKTOP----------------*/
+        .navbar{
+            background: var(--color1);
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img{
+            width: 50px;
+        }
+
+        .nav_items{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            display: contents;
+        }
+
+        .nav_items a{
+            position: relative;
+            margin: 120px;
+            color: white;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
+            font-style: bold;
+            font-size: var(--base-unit);
+        }
+
+        a:hover{
+            color: var(--color2);
+        }
+
+        .nav_items a::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color2);
+            transition: all 0.5s;
+        }
+
+        .nav_items a:hover:before{
+            width: 100%;
+        }
+
+        .nav_toggle{
+            display: none;
+        }
+
+        /*------------------NAVBAR BUKAERA DESKTOP----------------*/
+
+        .caja-fotos{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .calendar {
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 500px;
+        }
+
+
+        .container{
+            width: 30%;
+            justify-content: space-between;
+            border: 2px solid black;
+            border-radius: 2%;
+            box-shadow: 2px gray;
+            margin: 7px;
+            padding: 7px;
+        }
+
+        .container img{
+            width: 150px;
+        }
+
+        .container p{
+            margin-left: 10px;
+        }
+
+        #tienda{
+            display: flex;
+        }
+
+        #tienda a{
+            justify-content: flex-end;
+        }
+
+        .caja-fotos{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .calendar {
+            margin-bottom: 30px;
+            margin-left: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+
+        .padre{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 2%;
+            box-shadow: 2px gray;
+            margin: 7px;
+            padding: 7px;
+            width: 450px;
+           }
+
+           .container img{
+            width: 200px;
+            align-content: center;
+        }
+
+        button{
+            border: 2px solid var(--black);
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /**font-size: 1vw;**/
+            padding: 5px;
+            margin: 7px;
+            background: var(--color2);
+            border-radius:100px;
+            transition-duration: 0.4s;
+            height: fit-content;
+            width: 200px;
+            height: 50px;
+            /**width: 5vw;**/
+            margin-left: 0px;
+        }
+
+        #carritoikono a img{
+            width: 50px;
+         }
+
+}

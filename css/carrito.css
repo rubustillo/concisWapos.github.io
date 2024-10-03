@@ -1,0 +1,266 @@
+
+@font-face {
+    font-family: "agenda";
+    src: url(../fonts/Agenda-Medium.ttf);
+}
+@font-face {
+    font-family: "agenda-bold";
+    src: url(../fonts/Agenda-Bold.ttf);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-unit: 1rem;
+    --minimum-font:0.8rem;
+    --fuente-primaria : "agenda";
+    
+    /*paleta*/
+    --orange:#e94714;
+    --blue: #8cbeb2;
+    --yellow: #f3b562;
+    --white: #ffffff;
+    --black: #000000;
+    --color2: rgb(255, 111, 0);
+}
+
+/* --------------------INICIO DEL MOBILE---------------- */
+@media only screen and (min-width: 400px) {
+
+    .comprar-a {
+        padding: 10px;
+        color: transparent;
+    }
+    
+    #lehen{
+        margin: 0;
+        padding: 0;
+        background-color: var(--white);
+    }
+    
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 25px;
+        /**font-size: 3vw;**/
+    }
+    
+    .kanpoko{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    #tolcarrito{
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 20px;
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    button{
+        border: 3px solid var(--black);
+        font-size: 15px;
+        /**font-size: 1vw;**/
+        padding: 7px;
+        margin: 7px;
+        background: var(--white);
+        border-radius:100px;
+        transition-duration: 0.4s;
+        width: 120px;
+        /**width: 5vw;**/
+        margin-left: 0px;
+    }
+    
+    button:hover {
+        background-color: var(--black); 
+        color: var(--white);
+      }
+    
+    #cart{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        /**font-size: 1vw;**/
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .vuelvapatras{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--black);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /**font-size: 1vw;**/
+        border: 3px solid var(--black);
+        padding: 7px;
+        margin-left: 30px;
+        background: var(--white);
+        border-radius: 100px;
+        transition-duration: 0.4s;
+        width: 100px;
+        /**width: 5vw;**/
+        height: fit-content;
+    }
+    
+    .vuelvapatras:hover {
+        background-color: var(--color2); 
+        border: 3px solid var(--color2);
+        color: var(--white);
+      }
+    
+    #resumen_pedido{
+        margin: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /**font-size: 1vw;**/
+    }
+    
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    img{
+        width: 200px;
+        /**width: 15vw;**/
+    }
+    
+    #bigarren{
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        background-color: var(--color2);
+    }
+}
+
+/* --------------------FIN DEL MOBILE---------------- */
+
+/* --------------------INICIO DEL SCREEN---------------- */
+
+@media only screen and (min-width: 1200px) {
+
+.comprar-a {
+    padding: 10px;
+    color: transparent;
+}
+
+#lehen{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 25px;
+    /**font-size: 3vw;**/
+}
+
+.kanpoko{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#tolcarrito{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+button{
+    border: 3px solid var(--black);
+    font-size: 15px;
+    /**font-size: 1vw;**/
+    padding: 7px;
+    margin: 7px;
+    background: var(--white);
+    border-radius:100px;
+    transition-duration: 0.4s;
+    width: 120px;
+    /**width: 5vw;**/
+    margin-left: 0px;
+}
+
+button:hover {
+    background-color: var(--black); 
+    color: var(--white);
+  }
+
+#cart{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    /**font-size: 1vw;**/
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vuelvapatras{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /**font-size: 1vw;**/
+    border: 3px solid var(--black);
+    padding: 7px;
+    margin-left: 30px;
+    background: var(--white);
+    border-radius: 100px;
+    transition-duration: 0.4s;
+    width: 100px;
+    /**width: 5vw;**/
+    height: fit-content;
+}
+
+.vuelvapatras:hover {
+    background-color: var(--yellow); 
+    border: 3px solid var(--yellow);
+    color: var(--white);
+  }
+
+#resumen_pedido{
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /**font-size: 1vw;**/
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    width: 200px;
+    /**width: 15vw;**/
+}
+
+#bigarren{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color2);
+}
+}
+/* --------------------FINAL DEL SCREEN---------------- */
